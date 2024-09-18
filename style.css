@@ -1,0 +1,158 @@
+
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.holder {
+
+}
+
+.header {
+    display: flex;
+    align-items:center;
+    margin: 0px 10px 10px 250px ;
+}
+.header h1 {
+    
+}
+.header p {
+    margin-top: 30px;
+    margin-left: 20px;
+    color: #969696;
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.filters-holder {
+    display: block;
+}
+.filters-holder  .filter-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+}
+.filters div {
+    display: flex; 
+    align-items: center;
+    margin-left: 15px;
+}
+
+.filter-shose ,
+.filter-Basketball ,
+.filter-Mens  {
+    border: 1px solid rgb(28, 28, 31);
+    padding: 7px 10px ;
+    font-size: 16px;
+    font-weight: 700;
+}
+.filter-clear {
+    padding: 7px 10px ;
+    font-size: 16px;
+    font-weight: 700;
+}
+.filters div  span {
+    background-color: black;
+    padding: 8px;
+    color: white;
+}
+
+.dropdown {
+    padding: 10px;
+}
+.dropdown select {
+    margin-left: 150px;
+    margin-right: 0px;
+    width: 270px;
+    height: 50px;
+    font-size: 22px;
+    padding: 10px ;
+}
+
+
+
+.cards-holder {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1000px;
+}
+
+.card {
+    position: relative;
+    margin:10px;
+    display: block;
+    width: 280px;
+    height: 400px;
+    /* background-color: #ccc; */
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius:15px;
+}
+.card-img {
+    width: 280px;
+    height:250px;
+    background-color: #ccc;
+}
+
+.heart-holder{
+    /* position: relative; */
+}
+.heart   {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 20px;
+    font-weight: 500px;
+}
+.sale {
+    position: absolute;
+    top: -3.9%;
+    left: 0%;
+    border-radius: 3px;
+    background-color:royalblue;
+    color: white;
+    padding: 7px 15px;
+
+}
+
+/*   custom for mobile  */
+
+@media(max-width:1050px) {
+    .cards-holder{
+        width: 100%;
+    }
+}
+
+
+@media(max-width:767px) {
+    .header {
+        display: block;
+        margin: 10px;
+    }
+    .card {
+        width: 350px;
+        height: 450px;
+    }
+    .card-img {
+        width: 350px;
+        height: 300px;
+
+    }
+    .cards-holder{
+        width: 100%;
+    }
+}
